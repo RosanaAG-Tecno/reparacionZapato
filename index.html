@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Zapatero Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              leather: {
+                100: '#f5e0c3',
+                300: '#d4a373',
+                500: '#a97142',
+                700: '#8b4513',
+                900: '#5d2906',
+              },
+              rubber: {
+                800: '#1f1f1f',
+                900: '#121212',
+              }
+            },
+            animation: {
+              'hammer-hit': 'hammer 0.3s ease-in-out',
+              'detach-tap': 'detach 0.6s forwards ease-in',
+              'vibrate-sand': 'vibrate 0.1s linear infinite',
+            },
+            keyframes: {
+              hammer: {
+                '0%, 100%': { transform: 'rotate(0deg)' },
+                '50%': { transform: 'rotate(-45deg)' },
+              },
+              detach: {
+                '0%': { transform: 'translate(0, 0) rotate(0deg)', opacity: '1' },
+                '100%': { transform: 'translate(20px, 50px) rotate(45deg)', opacity: '0' },
+              },
+              vibrate: {
+                '0%': { transform: 'translate(0, 0)' },
+                '25%': { transform: 'translate(1px, 1px)' },
+                '50%': { transform: 'translate(-1px, -1px)' },
+                '75%': { transform: 'translate(1px, -1px)' },
+                '100%': { transform: 'translate(0, 0)' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #f3f4f6;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/reparacionZapato/assets/index-DnVuhfSL.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
