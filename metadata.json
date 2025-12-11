@@ -1,0 +1,5 @@
+{
+  "name": "Simulador de Zapatero Pro",
+  "description": "Una simulación interactiva para reparar suelas de zapatos cambiando las tapas del tacón, asistida por IA para consejos de mantenimiento.",
+  "requestFramePermissions": []
+}
